@@ -38,13 +38,14 @@ $(document).ready(function() {
   $("#order-form").submit(function(event){
     event.preventDefault();
 
-    var size = $("input#size").val();
-    var quantity = $("input#quantity").val();
-    var toppings = $("select#topping option:selected").val();
-    var newPizza = new Pizza(size, quantity, toppings);
+    var selectedSize = $(".size:selected").val();
+    var selectedQuantity = parseInt($("input#quantity").val());
+    var selectedToppings = $("select#topping option:selected").val();
+    var newPizza = new Pizza(selectedSize, selectedQuantity, selectedToppings);
 
-    $("#order-form-three").hide();
+    // $("#order-form").hide();
     $("#final-order").show();
+    $("#final-order").empty().append("<p>your newly created pizza will cost <span class='pizza-cost'>" + newPizza.cost() + "</span> pounds</p>");
   });
 
 });
