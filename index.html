@@ -17,26 +17,37 @@
       <br>
       <input class="button-primary" type="submit" value="create your pizza">
 
-      <!-- <div id="order-form-one">
+      <div id="order-form-one">
         <p>first, select the size you want</p>
-        <form>
-          <div class="row">
-            <div class="six columns">
+        <form id="order-form-one" class="twelve columns">
+          <div class="row form row">
+            <label for="pizza-size">size of pizza desired</label>
+            <select>
+              <option class="pizza-size" value="Option 1">small</option>
+              <option class="pizza-size" value="Option 2">medium</option>
+              <option class="pizza-size" value="Option 3">large</option>
+              <option class="pizza-size" value="Option 3">grandiose</option>
+            </select>
+            <br>
+            <br>
+            <div class="row">
+              <input class="button-primary" type="submit" value="Submit">
+            </form>
+            </div>
+        </div>
+      </div>
+
+      <div id="order-form-two">
+        <p>second, enter in the quantity you want</p>
+        <form id="order-form-two" class="twelve columns">
+          <div class="row form-row">
               <label for="pizza-quantity">quantity desired</label>
-              <input class="u-full-width" type="email" placeholder="2" id="pizza-quantity">
+              <input type="text" id="pizza-quantity">
             </div>
             <br>
-            <div class="six columns">
-              <label for="pizza-size">size of pizza desired</label>
-              <select class="u-full-width" id="exampleRecipientInput">
-                <option value="Option 1">small</option>
-                <option value="Option 2">medium</option>
-                <option value="Option 3">large</option>
-                <option value="Option 3">grandiose</option>
-              </select>
-            <input class="button-primary" type="submit" value="next">
-            </div> -->
-
+            <div class="row">
+              <input class="button-primary" type="submit" value="Submit">
+            </div>
       </div>
     </div>
   </body>
