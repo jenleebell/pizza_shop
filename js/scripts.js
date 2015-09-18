@@ -26,13 +26,16 @@ Pizza.prototype.cost = function() {
 }
 
 $(document).ready(function() {
+  // $(".shoppe-logo").hide().fadeIn(1000);
+  $("#shoppe-intro").hide().fadeIn(2000);
+  $("#create-pizza").hide().fadeIn(6000);
   $("#order-form").hide();
   $("#final-order").hide();
 
   $("#create-pizza").click(function(event){
     event.preventDefault();
     $("#shoppe-intro").hide();
-    $("#order-form").show();
+    $("#order-form").hide().fadeIn(2000);
   });
 
   $("#order-form").submit(function(event){
