@@ -26,29 +26,27 @@ Pizza.prototype.cost = function() {
 }
 
 $(document).ready(function() {
-  // $(".shoppe-logo").hide().fadeIn(1000);
   $("#shoppe-intro").hide().fadeIn(2000);
   $("#create-pizza").hide().fadeIn(6000);
   $("#order-form").hide();
   $("#final-order").hide();
 
-  $("#create-pizza").click(function(event){
+  $("#create-pizza").click(function(event) {
     event.preventDefault();
     $("#shoppe-intro").hide();
     $("#order-form").hide().fadeIn(2000);
   });
 
-  $("#order-form").submit(function(event){
+  $("#order-form").submit(function(event) {
     event.preventDefault();
 
     var selectedSize = $(".size:selected").val();
     var selectedQuantity = parseInt($("input#quantity").val());
-    var selectedToppings = $("select#topping option:selected").val();
+    var selectedToppings = $("input#topping option:selected").val();
     var newPizza = new Pizza(selectedSize, selectedQuantity, selectedToppings);
 
-    // $("#order-form").hide();
+    $("#order-form").fadeOut(500);
     $("#final-order").show();
-    $("#final-order").empty().append("<p>your newly created pizza will cost <span class='pizza-cost'>" + newPizza.cost() + "</span> pounds</p>");
+    $("#final-order").append("<p>your newly created pizza will cost <span class='pizza-cost'>" + newPizza.cost() + "</span> pounds</p>");
   });
-
 });

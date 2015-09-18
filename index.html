@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <div class="shoppe-logo">
-        <h1>the pizza sh<img src="img/italian3.png">ppe</h1>
+        <h1><a href="index.html">the pizza sh<img src="img/italian3.png">ppe</a></h1>
         <div class="shoppe-info">
           1337 arugula avenue :: 020.746.0018
         </div>
@@ -27,7 +27,6 @@
             <button class="button-primary" type="button" id="create-pizza">create pizza</button>
           </div>
         </div>
-
       <div id="order-form">
         <p>first :: select the size you desire</p>
         <form id="order-form" class="twelve columns">
@@ -39,51 +38,51 @@
               <option class="size" value="large">large</option>
               <option class="size" value="grandiose">grandiose</option>
             </select>
-<hr>
+          </div>
+        <hr>
         <p>second :: enter in the quantity of pizza you desire</p>
           <div class="row form-row">
               <label for="quantity"></label>
               <input type="text" id="quantity" placeholder="i.e. 4">
-            </div>
-<hr>
+          </div>
+        <hr>
         <p>third :: enter in the ingredients you desire</p>
-          <div class="row form-row">
-            <label class="cheese">
-              <input type="checkbox">
-              <span class="label-body">mozzarella cheese</span>
-            </label>
-            <label class="pepperoni">
-              <input type="checkbox">
-              <span class="label-body">pepperoni</span>
-            </label>
-            <label class="olives">
-              <input type="checkbox">
-              <span class="label-body">olives</span>
-            </label>
-            <label class="bell-pepper">
-              <input type="checkbox">
-              <span class="label-body">bell pepper</span>
-            </label>
-            <label class="arugula">
-              <input type="checkbox">
-              <span class="label-body">arugula</span>
-            </label>
-            <label class="pepperoni">
-              <input type="checkbox">
-              <span class="label-body">pepperoni</span>
-            </label>
-            <br>
-            <div class="row">
-              <input class="button-primary" type="submit" value="submit creation">
-            </div>
-          </form>
-</div>
-
-      <div id="final-order">
+        <div class="row form-row">
+          <label class="cheese">
+            <input type="checkbox" id="topping" value="cheese">
+            <span class="label-body">mozzarella cheese</span>
+          </label>
+          <label class="pepperoni">
+            <input type="checkbox">
+            <span class="label-body">pepperoni</span>
+          </label>
+          <label class="olives">
+            <input type="checkbox">
+            <span class="label-body">olives</span>
+          </label>
+          <label class="bell-pepper">
+            <input type="checkbox">
+            <span class="label-body">bell pepper</span>
+          </label>
+          <label class="arugula">
+            <input type="checkbox">
+            <span class="label-body">arugula</span>
+          </label>
+          <label class="pepperoni">
+            <input type="checkbox">
+            <span class="label-body">pepperoni</span>
+          </label>
+        </div>
+          <br>
+          <div class="row">
+            <input class="button-primary" type="submit" value="submit creation">
+          </div>
+        </form>
       </div>
-
-
-
+      <div id="final-order">
+        <p>thank you for choosing the pizza shoppe
+        <br><a href="index.html">want to order more?</a>
+      </div>
     </div>
   </body>
 </html>
