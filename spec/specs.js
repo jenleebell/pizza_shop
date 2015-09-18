@@ -1,12 +1,12 @@
 describe("Pizza", function() {
   it("creates a new pizza order", function() {
-    var testPizza = new Pizza("Large", 2);
-    expect(testPizza.size).to.equal("Large");
+    var testPizza = new Pizza("large", 2);
+    expect(testPizza.size).to.equal("large");
     expect(testPizza.quantity).to.equal(2);
   });
   it("calculates cost for base pizza", function() {
-    var testPizza = new Pizza("Large", 2);
-    expect(testPizza.cost).to.equal("20");
+    var testPizza = new Pizza("large", 2);
+    expect(testPizza.cost()).to.equal(20);
   });
 });
 
