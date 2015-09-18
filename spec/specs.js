@@ -4,8 +4,10 @@ describe("Pizza", function() {
     expect(testPizza.size).to.equal("Large");
     expect(testPizza.quantity).to.equal(2);
   });
-
-
+  it("calculates cost for base pizza", function() {
+    var testPizza = new Pizza("Large", 2);
+    expect(testPizza.cost).to.equal("20");
+  });
 });
 
 describe("Topping", function() {
