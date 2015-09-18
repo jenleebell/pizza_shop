@@ -4,4 +4,9 @@ describe("Pizza", function() {
     expect(testPizza.size).to.equal("Large");
     expect(testPizza.quantity).to.equal(2);
   });
+
+  it("creates a new topping", function() {
+    var testTopping = new Topping("pepperoni");
+    expect(testTopping.name).to.equal("pepperoni");
+  });
 });
