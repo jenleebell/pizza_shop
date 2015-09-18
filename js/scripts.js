@@ -26,41 +26,25 @@ Pizza.prototype.cost = function() {
 }
 
 $(document).ready(function() {
-  $("#order-form-one").hide();
-  $("#order-form-two").hide();
-  $("#order-form-three").hide();
+  $("#order-form").hide();
   $("#final-order").hide();
 
   $("#create-pizza").click(function(event){
     event.preventDefault();
     $("#shoppe-intro").hide();
-    $("#order-form-one").show();
+    $("#order-form").show();
   });
 
-  $("#order-form-one").submit(function(event){
+  $("#order-form").submit(function(event){
     event.preventDefault();
-    //
-    // var size = $("input#size").val();
-    // pizza.size = pizzaSize;
-    $("#order-form-one").hide();
-    $("#order-form-two").show();
-  });
 
-  $("#order-form-two").submit(function(event){
-    event.preventDefault();
-    //
-    // var size = $("input#size").val();
-    // pizza.size = pizzaSize;
-    $("#order-form-two").hide();
-    $("#order-form-three").show();
-  });
+    var size = $("input#size").val();
+    var quantity = $("input#quantity").val();
+    var toppings = $("select#topping option:selected").val();
+    var newPizza = new Pizza(size, quantity, toppings);
 
-  $("#order-form-three").submit(function(event){
-    event.preventDefault();
-    //
-    // var size = $("input#size").val();
-    // pizza.size = pizzaSize;
     $("#order-form-three").hide();
     $("#final-order").show();
   });
+
 });
