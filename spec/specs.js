@@ -5,6 +5,10 @@ describe("Pizza", function() {
     expect(testPizza.quantity).to.equal(2);
   });
 
+
+});
+
+describe("Topping", function() {
   it("creates a new topping", function() {
     var testTopping = new Topping("pepperoni");
     expect(testTopping.name).to.equal("pepperoni");
