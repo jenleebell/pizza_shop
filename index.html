@@ -5,23 +5,30 @@
     <link rel="stylesheet" href="css/skeleton.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>the pizza shoppe</title>
   </head>
   <body>
     <div class="container">
-      <h1>the pizza sh<img src="img/italian3.png">ppe</h1>
-      <div class="shoppe-info">1332 pepperoni lane :: 503.225.5555</div>
-      <p>our pizzas are created in shoppe using local ingredients and fired in our wood stove
-      <br>use our pizza calculator below to determine the cost of your next pizza creation</p>
-      <br>
-      <input class="button-primary" type="submit" value="create your pizza">
-
+        <h1>the pizza sh<img src="img/italian3.png">ppe</h1>
+        <div class="shoppe-info">
+          1332 pepperoni lane :: 503.225.5555
+        </div>
+        <hr>
+        <div id="shoppe-intro">
+          <p>our pizzas are created in shoppe using local ingredients and fired in our wood stove
+          <br>use our pizza calculator below to determine the cost of your next pizza creation</p>
+          <br>
+          <div id="create-pizza">
+            <button class="button-primary" type="button" id="create-pizza">create pizza</button>
+          </div>
+        </div>
       <div id="order-form-one">
-        <p>first, select the size you want</p>
+        <p>first: select the size you desire</p>
         <form id="order-form-one" class="twelve columns">
           <div class="row form row">
-            <label for="pizza-size">size of pizza desired</label>
+            <label for="pizza-size"></label>
             <select>
               <option class="pizza-size" value="Option 1">small</option>
               <option class="pizza-size" value="Option 2">medium</option>
@@ -30,25 +37,69 @@
             </select>
             <br>
             <br>
+            <br>
             <div class="row">
-              <input class="button-primary" type="submit" value="Submit">
+              <input class="button-primary" type="submit" value="submit size" id="first-button">
             </form>
             </div>
         </div>
       </div>
 
       <div id="order-form-two">
-        <p>second, enter in the quantity you want</p>
+        <p>second, enter in the quantity of pizza you desire</p>
         <form id="order-form-two" class="twelve columns">
           <div class="row form-row">
-              <label for="pizza-quantity">quantity desired</label>
-              <input type="text" id="pizza-quantity">
+              <label for="pizza-quantity"></label>
+              <input type="text" id="pizza-quantity" placeholder="i.e. 4">
             </div>
             <br>
-            <div class="row">
-              <input class="button-primary" type="submit" value="Submit">
-            </div>
+          <div class="row">
+            <input class="button-primary" type="submit" value="submit quantity">
+          </div>
+        </form>
       </div>
+
+      <div id="order-form-three">
+        <p>lastly, enter in the ingredients you desire on top of your pizza</p>
+        <form id="order-form-three" class="twelve columns">
+          <div class="row form-row">
+            <label class="cheese">
+              <input type="checkbox">
+              <span class="label-body">mozzarella cheese</span>
+            </label>
+            <label class="pepperoni">
+              <input type="checkbox">
+              <span class="label-body">pepperoni</span>
+            </label>
+            <label class="olives">
+              <input type="checkbox">
+              <span class="label-body">olives</span>
+            </label>
+            <label class="bell-pepper">
+              <input type="checkbox">
+              <span class="label-body">bell pepper</span>
+            </label>
+            <label class="arugula">
+              <input type="checkbox">
+              <span class="label-body">arugula</span>
+            </label>
+            <label class="pepperoni">
+              <input type="checkbox">
+              <span class="label-body">pepperoni</span>
+            </label>
+            <br>
+            <div class="row">
+              <input class="button-primary" type="submit" value="submit creation">
+            </div>
+          </form>
+      </div>
+
+      <div id="final-order">
+        <p>the total cost of your pizza is: </p>
+      </div>
+
+
+
     </div>
   </body>
 </html>

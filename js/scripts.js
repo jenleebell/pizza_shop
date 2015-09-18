@@ -24,3 +24,43 @@ Pizza.prototype.cost = function() {
   }
   return total = total * this.quantity + (toppingsAmount * 1);
 }
+
+$(document).ready(function() {
+  $("#order-form-one").hide();
+  $("#order-form-two").hide();
+  $("#order-form-three").hide();
+  $("#final-order").hide();
+
+  $("#create-pizza").click(function(event){
+    event.preventDefault();
+    $("#shoppe-intro").hide();
+    $("#order-form-one").show();
+  });
+
+  $("#order-form-one").submit(function(event){
+    event.preventDefault();
+    //
+    // var size = $("input#size").val();
+    // pizza.size = pizzaSize;
+    $("#order-form-one").hide();
+    $("#order-form-two").show();
+  });
+
+  $("#order-form-two").submit(function(event){
+    event.preventDefault();
+    //
+    // var size = $("input#size").val();
+    // pizza.size = pizzaSize;
+    $("#order-form-two").hide();
+    $("#order-form-three").show();
+  });
+
+  $("#order-form-three").submit(function(event){
+    event.preventDefault();
+    //
+    // var size = $("input#size").val();
+    // pizza.size = pizzaSize;
+    $("#order-form-three").hide();
+    $("#final-order").show();
+  });
+});
