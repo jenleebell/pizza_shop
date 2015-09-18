@@ -1,22 +1,22 @@
-# _The Pizza Shop_
+# _The Pizza Shoppe_
 
-##### _A javascript web tool to find and replace words in a sentence, September 18, 2015_
+##### _A javascript website to order pizza, September 18, 2015_
 
 #### By _**Jennifer Bell**_
 
 ## Description
 
-_This handy little javascript app will allow you to enter in a sentence, a word you want to find, and the word you'd like to replace that found word with!_
+_This website will allow you to order pizza from a fictional British pizza shoppe. You are able to calculate the cost of a future order of pizza at the pizza shoppe_
 
 ## Setup
 
-* _`$ git clone https://github.com/jenleebell/replacer` into your computer_
+* _`$ git clone https://github.com/jenleebell/pizza_shop` into your computer_
 * _Open `index.html` in the root folder into your favorite web browser._
 
 ## Technologies Used
 
 * _Written in javascript & jQuery_
-* _Frontend with html5, css, and bootstrap_
+* _Frontend with html5, css, and skeleton_
 * _Error checking with MochaJS and ChaiJS_
 
 ### Legal
