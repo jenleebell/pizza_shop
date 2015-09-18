@@ -10,6 +10,9 @@ Pizza.prototype.topping = function(topping) {
 
 Pizza.prototype.cost = function() {
   var total = 0
+  var toppings = this.toppings;
+  var toppingsAmount = toppings.length;
+
   if (this.size === "small") {
     total = total + 5;
   } else if (this.size === "medium") {
@@ -19,6 +22,5 @@ Pizza.prototype.cost = function() {
   } else {
     total = total + 15;
   }
-  total = total * this.quantity;
-  return total;
+  return total = total * this.quantity + (toppingsAmount * 1);
 }

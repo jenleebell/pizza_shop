@@ -16,8 +16,11 @@ describe("Pizza", function() {
     var testPizza = new Pizza("large", 2);
     expect(testPizza.cost()).to.equal(20);
   });
-  // it("calculates cost for pizza with toppings", function() {
-  //   var testPizza = new Pizza("large", 2);
-  //   expect(testPizza.cost()).to.equal(20);
-  // });
+
+  it("calculates cost for pizza with toppings", function() {
+    var testPizza = new Pizza("large", 2, []);
+    testPizza.topping("pepperoni");
+    testPizza.topping("pepperoni");
+    expect(testPizza.cost()).to.equal(22);
+  });
 });
